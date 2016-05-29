@@ -25,6 +25,7 @@ Plug 'clojure-emacs/cider-nrepl'
 Plug 'guns/vim-clojure-static'
 Plug 'tpope/vim-fireplace'
 Plug 'venantius/vim-cljfmt'
+Plug 'kchmck/vim-coffee-script'
 
 call plug#end()
 
