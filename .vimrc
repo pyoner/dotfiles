@@ -16,7 +16,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'ekalinin/dockerfile.vim'
 Plug 'paredit.vim'
 Plug 'matze/vim-move'
-Plug 'valloric/youcompleteme'
+"Plug 'valloric/youcompleteme'
 Plug 'ctrlpvim/ctrlp.vim'
 "Plug 'kien/rainbow_parentheses.vim'
 Plug 'luochen1990/rainbow'
@@ -26,6 +26,10 @@ Plug 'guns/vim-clojure-static'
 Plug 'tpope/vim-fireplace'
 Plug 'venantius/vim-cljfmt'
 Plug 'kchmck/vim-coffee-script'
+Plug 'mattn/emmet-vim'
+"Plug 'raimondi/delimitmate'
+Plug 'jiangmiao/auto-pairs'
+Plug 'ervandew/supertab'
 
 call plug#end()
 
@@ -78,7 +82,7 @@ set textwidth=80
 let g:paredit_leader = '\'
 
 "move plugin
-let g:move_map_keys = 0
+let g:move_map_keys = 1
 let g:move_key_modifier = 'C'
 
 "rainbow
@@ -86,3 +90,6 @@ let g:rainbow_active = 1
 
 "syntax for clojure boot
 au BufNewFile,BufRead build.boot setf clojure
+
+"format clojure file
+map <C-f> :silent !cljfmt %<CR>
