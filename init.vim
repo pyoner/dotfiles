@@ -5,6 +5,9 @@ call plug#begin('~/.config/nvim/plugged/')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
 Plug 'othree/yajs.vim', { 'for': 'javascript' }
+Plug 'othree/es.next.syntax.vim', {'for': 'javascript'}
+Plug 'gavocanov/vim-js-indent', {'for': 'javascript'}
+
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
