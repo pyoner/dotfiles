@@ -110,6 +110,8 @@ autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
 " for css or scss
 autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
 
+let g:editorconfig_Beautifier = '~/.editorconfig'
+
 "jsx config
 let g:jsx_ext_required = 0
 

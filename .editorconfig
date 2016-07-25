@@ -1,0 +1,29 @@
+;.editorconfig
+
+root = true
+
+[**.js]
+e4x = true
+indent_style = space
+indent_size = 4
+brace_style = collapse-preserve-inline
+
+[**.json]
+indent_style = space
+indent_size = 4
+
+[**.jsx]
+e4x = true
+indent_style = space
+indent_size = 4
+brace_style = collapse-preserve-inline
+
+[**.css]
+indent_style = space
+indent_size = 4
+
+[**.html]
+indent_style = space
+indent_size = 4
+max_char = 78
+brace_style = expand
