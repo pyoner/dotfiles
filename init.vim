@@ -8,6 +8,7 @@ Plug 'othree/yajs.vim', { 'for': 'javascript' }
 Plug 'othree/es.next.syntax.vim', {'for': 'javascript'}
 Plug 'gavocanov/vim-js-indent', {'for': 'javascript'}
 Plug 'maksimr/vim-jsbeautify'
+Plug 'mxw/vim-jsx'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -109,7 +110,8 @@ autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
 " for css or scss
 autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
 
-
+"jsx config
+let g:jsx_ext_required = 0
 
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
