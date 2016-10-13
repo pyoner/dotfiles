@@ -10,6 +10,9 @@ Plug 'gavocanov/vim-js-indent', {'for': 'javascript'}
 Plug 'maksimr/vim-jsbeautify'
 Plug 'mxw/vim-jsx'
 
+"elm
+Plug 'elmcast/elm-vim'
+
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
@@ -143,3 +146,12 @@ nmap <leader>bq :bp <BAR> bd #<CR>
 nmap <leader>bl :ls<CR>
 
 nmap <C-p> :FZF<CR>
+
+"elm
+let g:elm_format_autosave = 1
+
+"Syntastic support should work out of the box, but we recommend the following settings:
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+
+let g:elm_syntastic_show_warnings = 1
