@@ -5,6 +5,7 @@ filetype off
 call plug#begin('~/.vim/plugged')
 
 " Syntastic is a syntax checking plugin
+Plug 'christoomey/vim-system-copy'
 Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdtree'
 Plug 'bling/vim-airline'
