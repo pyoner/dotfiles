@@ -1,6 +1,5 @@
 filetype off 
 
-
 call plug#begin('~/.config/nvim/plugged/')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
@@ -37,6 +36,10 @@ Plug 'mattn/emmet-vim'
 "Plug 'raimondi/delimitmate'
 Plug 'jiangmiao/auto-pairs'
 Plug 'ervandew/supertab'
+Plug 'lifepillar/pgsql.vim'
+Plug 'klen/python-mode'
+Plug 'google/yapf'
+Plug '~/.config/nvim/plugged/yapf/plugins/vim'
 
 call plug#end()
 
@@ -155,3 +158,10 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 
 let g:elm_syntastic_show_warnings = 1
+
+"By default python-mode uses python 2 syntax checking. To enable python 3 syntax checking (e.g. for async) add:
+let g:pymode_python = 'python3'
+
+"yapf
+map <C-Y> :call yapf#YAPF()<cr>
+imap <C-Y> <c-o>:call yapf#YAPF()<cr>
