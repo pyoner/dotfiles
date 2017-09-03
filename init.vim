@@ -152,12 +152,13 @@ nmap <C-p> :FZF<CR>
 
 "elm
 let g:elm_format_autosave = 1
+let g:elm_make_output_file = "/dev/null"
+let g:elm_syntastic_show_warnings = 1
 
 "Syntastic support should work out of the box, but we recommend the following settings:
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 
-let g:elm_syntastic_show_warnings = 1
 
 "By default python-mode uses python 2 syntax checking. To enable python 3 syntax checking (e.g. for async) add:
 let g:pymode_python = 'python3'
