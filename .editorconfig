@@ -18,6 +18,12 @@ indent_style = space
 indent_size = 4
 brace_style = collapse-preserve-inline
 
+[**.ts]
+e4x = true
+indent_style = space
+indent_size = 4
+brace_style = collapse-preserve-inline
+
 [**.css]
 indent_style = space
 indent_size = 4
