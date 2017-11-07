@@ -8,6 +8,7 @@ Plug 'othree/es.next.syntax.vim', {'for': 'javascript'}
 Plug 'gavocanov/vim-js-indent', {'for': 'javascript'}
 Plug 'maksimr/vim-jsbeautify'
 Plug 'mxw/vim-jsx'
+Plug 'leafgarland/typescript-vim'
 
 "elm
 Plug 'elmcast/elm-vim'
