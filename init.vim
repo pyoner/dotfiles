@@ -8,7 +8,14 @@ Plug 'othree/es.next.syntax.vim', {'for': 'javascript'}
 Plug 'gavocanov/vim-js-indent', {'for': 'javascript'}
 Plug 'maksimr/vim-jsbeautify'
 Plug 'mxw/vim-jsx'
-Plug 'leafgarland/typescript-vim'
+
+"typescript
+Plug 'herringtondarkholme/yats.vim'
+Plug 'mhartington/nvim-typescript'
+
+"Plug 'leafgarland/typescript-vim'
+"Plug 'quramy/tsuquyomi'
+
 
 "elm
 Plug 'elmcast/elm-vim'
@@ -108,6 +115,7 @@ au BufNewFile,BufRead build.boot setf clojure
 "map <c-f> :call JsBeautify()<cr>
 " or
 autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
+autocmd FileType typescript noremap <buffer>  <c-f> :call JsBeautify()<cr>
 " for json
 autocmd FileType json noremap <buffer> <c-f> :call JsonBeautify()<cr>
 " for jsx
