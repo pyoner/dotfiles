@@ -9,9 +9,13 @@ Plug 'gavocanov/vim-js-indent', {'for': 'javascript'}
 Plug 'maksimr/vim-jsbeautify'
 Plug 'mxw/vim-jsx'
 
+"dark powered neo-completion
+Plug 'shougo/deoplete.nvim'
+
 "typescript
 Plug 'herringtondarkholme/yats.vim'
 Plug 'mhartington/nvim-typescript'
+
 
 "Plug 'leafgarland/typescript-vim'
 "Plug 'quramy/tsuquyomi'
@@ -175,3 +179,6 @@ let g:pymode_python = 'python3'
 "yapf
 map <C-Y> :call yapf#YAPF()<cr>
 imap <C-Y> <c-o>:call yapf#YAPF()<cr>
+
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
