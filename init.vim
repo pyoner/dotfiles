@@ -20,6 +20,9 @@ Plug 'mhartington/nvim-typescript'
 "Plug 'leafgarland/typescript-vim'
 "Plug 'quramy/tsuquyomi'
 
+"rust
+Plug 'rust-lang/rust.vim'
+
 
 "elm
 Plug 'elmcast/elm-vim'
