@@ -22,6 +22,7 @@ Plug 'mhartington/nvim-typescript'
 
 "rust
 Plug 'rust-lang/rust.vim'
+Plug 'rust-lang-nursery/rustfmt'
 
 
 "elm
