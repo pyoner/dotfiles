@@ -14,7 +14,16 @@ Plug 'shougo/deoplete.nvim'
 
 "typescript
 Plug 'herringtondarkholme/yats.vim'
-Plug 'mhartington/nvim-typescript'
+
+"Then run :UpdateRemotePlugins when you first launch nvim after installing the plugin.
+Plug 'mhartington/nvim-typescript' 
+
+"npm install -g typescript-formatter
+Plug 'sbdchd/neoformat'
+
+
+"Enable deoplete at startup
+let g:deoplete#enable_at_startup = 1
 
 
 "Plug 'leafgarland/typescript-vim'
@@ -124,7 +133,7 @@ au BufNewFile,BufRead build.boot setf clojure
 "map <c-f> :call JsBeautify()<cr>
 " or
 autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
-autocmd FileType typescript noremap <buffer>  <c-f> :call JsBeautify()<cr>
+autocmd FileType typescript noremap <buffer>  <c-f> :Neoformat tsfmt<cr>
 " for json
 autocmd FileType json noremap <buffer> <c-f> :call JsonBeautify()<cr>
 " for jsx
