@@ -18,8 +18,15 @@ Plug 'herringtondarkholme/yats.vim'
 "Then run :UpdateRemotePlugins when you first launch nvim after installing the plugin.
 Plug 'mhartington/nvim-typescript' 
 
-"npm install -g typescript-formatter
+"npm install -g prettier
 Plug 'sbdchd/neoformat'
+let g:neoformat_typescript_fmtts = {
+    \ 'exe': 'prettier',
+    \ 'args': ['--stdin', '--parser', 'typescript', '--tab-width', '4'],
+    \ 'stdin': 1,
+    \ }
+
+let g:neoformat_enabled_typescript = ['fmtts', 'prettier', 'tsfmt']
 
 
 "Enable deoplete at startup
@@ -133,7 +140,7 @@ au BufNewFile,BufRead build.boot setf clojure
 "map <c-f> :call JsBeautify()<cr>
 " or
 autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
-autocmd FileType typescript noremap <buffer>  <c-f> :Neoformat tsfmt<cr>
+autocmd FileType typescript noremap <buffer>  <c-f> :Neoformat fmtts<cr>
 " for json
 autocmd FileType json noremap <buffer> <c-f> :call JsonBeautify()<cr>
 " for jsx
