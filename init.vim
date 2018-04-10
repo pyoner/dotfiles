@@ -18,6 +18,12 @@ Plug 'herringtondarkholme/yats.vim'
 "Then run :UpdateRemotePlugins when you first launch nvim after installing the plugin.
 Plug 'mhartington/nvim-typescript' 
 
+"ALE (Asynchronous Lint Engine)
+Plug 'w0rp/ale'
+
+" Vue
+Plug 'posva/vim-vue'
+
 "npm install -g prettier
 Plug 'sbdchd/neoformat'
 let g:neoformat_typescript_fmtts = {
